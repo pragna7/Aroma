@@ -1,16 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const navLinks = document.querySelectorAll(".nav-links a");
-    
-    navLinks.forEach(link => {
-        link.addEventListener("click", (event) => {
-            event.preventDefault();
-            const targetSection = document.querySelector(link.getAttribute("href"));
-            
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: "smooth"
-                });
-            }
-        });
-    });
+    // Scroll effect when clicking "Discover More"
+   document.getElementById("explore-btn").addEventListener("click", () => {
+       document.querySelector(".featured").scrollIntoView({ behavior: "smooth" });
+   });
+});
+
+document.getElementById("menu-toggle").addEventListener("click", function () {
+   document.getElementById("nav-links").classList.toggle("show");
 });
