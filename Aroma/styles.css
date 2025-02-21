@@ -194,7 +194,7 @@ footer .footer-logo img {
 
 }
 
-i {
+.icons i {
     border: 2px solid #ffffff;
     border-radius: 50%;
     padding: 1.1rem;
@@ -202,7 +202,7 @@ i {
     font-size: 1.5rem;
 }
 
-i:hover {
+.icons i:hover {
     background-color: #BD996F;
     color: #ffffff;
     cursor: pointer;
@@ -227,6 +227,8 @@ i:hover {
     .footer-detail,
     .footer-content-links,
     .footer-icons {
+        align-items: left;
+        justify-content: left;
         width: 20%;
         margin-right: 4rem;
 
@@ -248,8 +250,15 @@ i:hover {
         justify-content: start;
         gap: 2rem;
     }
+    .location,
+    .phone,
+    .email{
+        align-items: start;
+        justify-content: start;
+        margin-left: 2rem ;
+    }
 
-    i {
+    .icons i {
         text-align: center;
         width: 4rem;
         height: 4rem;
